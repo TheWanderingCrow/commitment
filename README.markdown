@@ -1,24 +1,16 @@
-# Looking For Sponsors
-
-Enjoying https://whatthecommit.com/ ? Consider becoming a sponsor of this project. Your contributions keep the site running.
-
-https://github.com/users/ngerakines/sponsorship
+# Disclaimer
+This is forked from https://github.com/ngerakines/commitment and modified for my own use. (Namely removing the explicit messages so I can use it at work lol)
 
 # About WTC (What The Commit)
 Commitment is a small Tornado application that generates random commit messages.
 
-    https://whatthecommit.com/
+    https://wtc.wanderingcrow.net
 
-Commitment also provides https://whatthecommit.com/index.txt which provides plain text output.  
+Commitment also provides https://wtc.wanderingcrow.net/index.txt which provides plain text output.  
 Some interesting usage for that can be:
 ```
-git config --global alias.yolo '!git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
+git config --global alias.yolo '!git commit -m "$(curl -s https://wtc.wanderingcrow.net/index.txt)"'
 ```
-
-Or use one of the following VSCode Extensions:
-
-- [WhatTheCommit](https://marketplace.visualstudio.com/items?itemName=Gaardsholt.vscode-whatthecommit) 
-- [yoloCommit](https://marketplace.visualstudio.com/items?itemName=JohnStilia.yolocommit)
 
 # License
 
