@@ -24,7 +24,12 @@ function fill_line($message) {
 
 function return_message() {
     global $messages;
-    $hash = array_rand($messages);
+
+    if (isset($_GET['hardlink'])) {
+        $hash = $_GET['hardlink'];
+    } else {
+        $hash = array_rand($messages);
+    }
     $message = fill_line($messages[$hash]);
 
     return [$hash, $message];

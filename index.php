@@ -36,9 +36,9 @@ $message = return_message();
 <body>
     <div id="content">
         <p><?php echo $message[1];?></p>
-        <!-- <p class="permalink">
-            [<a href="/<?php echo $message[0];?>">permalink</a>]
-        </p> -->
+        <p class="permalink">
+            [<a href="/?hardlink=<?php echo $message[0];?>">permalink</a>]
+        </p>
     </div>
 </body>
 <!-- Like what you see? http://github.com/ngerakines/commitment -->
