@@ -1,7 +1,7 @@
 <?php
 
 $default_port = 5000;
-$names = ['Ben', 'Shea', 'Mike', 'Patrick'];
+$names = ['Ben', 'Shea', 'Mike'];
 
 $messages_file = file(__DIR__."/commit_messages.txt");
 $messages = [];
