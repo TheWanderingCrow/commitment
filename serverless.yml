@@ -17,17 +17,21 @@ functions:
     default:
         handler: index.php
         description: ''
-        runtime: ${bref:layer.php-81-fpm}
+        runtime: php-81-fpm
         timeout: 28 # in seconds (API Gateway has a timeout of 29 seconds)
         events:
-            -   httpApi: '/index'
+            - httpApi:
+                method: 'GET'
+                path: '/'
     text:
         handler: index_text.php
         description: ''
-        runtime: ${bref:layer.php-81-fpm}
+        runtime: php-81-fpm
         timeout: 28
         events:
-            -   httpApi: '/text'
+            - httpApi:
+                method: 'GET'
+                path: '/text'
 
 # Exclude files from deployment
 package:
