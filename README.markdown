@@ -9,7 +9,7 @@ Commitment is a small Tornado application that generates random commit messages.
 Commitment also provides https://wtc.wanderingcrow.net/index.txt which provides plain text output.  
 Some interesting usage for that can be:
 ```
-git config --global alias.yolo '!git commit -m "$(curl -s https://wtc.wanderingcrow.net/index.txt)"'
+git config --global alias.yolo '!git commit -m "$(curl -s https://wtc.wanderingcrow.net/text)"'
 ```
 
 # License

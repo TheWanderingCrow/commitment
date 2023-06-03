@@ -1,4 +1,4 @@
-service: app
+service: commitment
 
 provider:
     name: aws
@@ -7,17 +7,30 @@ provider:
 plugins:
     - ./vendor/bref/bref
 
+custom:
+    stage: ${opt:stage}
+    domains:
+        live: wtc.wanderingcrow.net
+        dev: dev-wtc.wanderingcrow.net
+
 functions:
-    main:
+    default:
         handler: index.php
         description: ''
-        runtime: php-81
+        runtime: ${bref:layer.php-81-fpm}
+        timeout: 28 # in seconds (API Gateway has a timeout of 29 seconds)
+        events:
+            -   httpApi: '/index'
     text:
         handler: index_text.php
         description: ''
-        runtime: php-81
+        runtime: ${bref:layer.php-81-fpm}
+        timeout: 28
+        events:
+            -   httpApi: '/text'
 
 # Exclude files from deployment
 package:
     patterns:
+        - '!node_modules/**'
         - '!tests/**'
