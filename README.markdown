@@ -6,7 +6,7 @@ Commitment is a small PHP application that generates random commit messages.
 
     https://wtc.wanderingcrow.net
 
-Commitment also provides https://wtc.wanderingcrow.net/index.txt which provides plain text output.  
+Commitment also provides https://wtc.wanderingcrow.net/text which provides plain text output.  
 Some interesting usage for that can be:
 ```
 git config --global alias.yolo '!git add . && git commit -m "$(curl -s https://wtc.wanderingcrow.net/text)" && git push'
