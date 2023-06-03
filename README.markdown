@@ -15,5 +15,6 @@ git config --global alias.yolo '!git add . && git commit -m "$(curl -s https://w
 # License
 
 Copyright (c) 2010-2021 Nick Gerakines <nick@gerakines.net>
+Edits by Patrick Menking <torluck.kculrot@gmail.com>
 
 This project and its contents are open source under the MIT license.
