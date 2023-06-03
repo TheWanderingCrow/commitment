@@ -1,0 +1,23 @@
+service: app
+
+provider:
+    name: aws
+    region: us-east-1
+
+plugins:
+    - ./vendor/bref/bref
+
+functions:
+    main:
+        handler: index.php
+        description: ''
+        runtime: php-81
+    text:
+        handler: index_text.php
+        description: ''
+        runtime: php-81
+
+# Exclude files from deployment
+package:
+    patterns:
+        - '!tests/**'

@@ -1,0 +1,14 @@
+{
+    "name": "thewanderingcrow/commitment",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TheWanderingCrow",
+            "email": "torluck.kculrot@gmail.com"
+        }
+    ],
+    "require": {
+        "bref/bref": "^2.0"
+    }
+}
