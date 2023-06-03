@@ -29,11 +29,15 @@
         }
     </style>
 </head>
+<?php
+require "commit.php";
+$message = return_message();
+?>
 <body>
     <div id="content">
-        <p>{% raw message %}</p>
+        <p><?php echo $message[1];?></p>
         <p class="permalink">
-            [<a href="/{{ message_hash }}">permalink</a>]
+            [<a href="/<?php echo $message[0];?>">permalink</a>]
         </p>
     </div>
 </body>

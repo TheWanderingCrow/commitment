@@ -411,7 +411,7 @@ added code
 added message
 added security.
 added super-widget 2.0.
-after of this commit remember do a git reset hard
+after this commit remember do a git reset hard
 ajax-loader hotness, oh yeah
 and a comma
 and so the crazy refactoring process sees the sunlight after some months in the dark!
